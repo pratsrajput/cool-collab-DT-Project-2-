@@ -1,0 +1,76 @@
+<head>
+
+<style>
+body{
+     background:url('pic/bg7.jpg');
+
+}
+
+.card-container.card {
+    max-width: 450px;
+    padding: 40px 40px;
+}
+
+
+/*
+ * Card component
+ */
+.card {
+    
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    
+}
+div.transbox {
+width:450px;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60);
+  }
+  div.transbox p {
+  
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<center>
+
+<!-- {{message}}
+<span style="color:red">{{error.message}}</span>
+{{logoutSuccess}} -->
+
+<div class="background">
+  <div class="transbox">  
+  
+  
+
+<div class="card card-container">
+<form ng-click="validateUser()">
+<font size="10" font face="Elephant"><h2> Welcome To Login Page</h2></font><br/>
+<font size="7" font face="Elephant"> <h3 style="color:black">ENTER USERNAME</h3></font> <input type="text" ng-model="user.username" class="form-control" required>
+<br/>
+<font size="7" font face="Elephant"> <h3 style="color:black">ENTER PASSWORD</h3></font> <input type="password" ng-model="user.password" class="form-control" required>
+<br/>
+<input type="submit" button type="button" class="btn btn-primary btn-lg" value="submit">
+</form>
+</div>
+</div>
+</div>
+</center> 
+      
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 

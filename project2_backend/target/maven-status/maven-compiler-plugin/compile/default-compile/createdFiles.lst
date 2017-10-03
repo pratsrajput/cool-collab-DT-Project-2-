@@ -1,0 +1,13 @@
+com\niit\controller\JobController.class
+com\niit\model\User.class
+com\niit\dao\JobDao.class
+com\niit\model\Person.class
+com\niit\model\Job.class
+com\niit\controller\UserController.class
+com\niit\model\Error.class
+com\niit\configuration\DBConfig.class
+com\niit\dao\UserDao.class
+com\niit\configuration\WebAppInitializer.class
+com\niit\configuration\WebConfig.class
+com\niit\dao\JobDaoImpl.class
+com\niit\dao\UserDaoImpl.class
