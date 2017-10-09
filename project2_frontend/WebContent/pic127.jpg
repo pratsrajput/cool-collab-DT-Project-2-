@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div ng-if="currentUser==undefined">
+{{gotologin()}}
+</div>
+
+<div class="container col-sm-4 col-sm-offset-8" style="padding:20px;margin:80px;box-shadow: 3px 4px 8px 5px rgba(0, 0, 0, 0.2), 3px 6px 20px 5px rgba(0, 0, 0, 0.19);">
+<div class="raw">
+<h1 style = "text-shadow: 1px 1px 2px green, 0 0 25px yellow, 0 0 5px red;">User Details</h1>
+<br>
+
+
+ <div style="position:absolute;top:120px;right:25px;">
+<img src="http://localhost:8089/mChatbackend/getimage/{{user.username}}" height="150px" width="150px">
+</div> 
+
+<div style="font-size:18px;color: #28a7f5 ;">First name :</div><h4>{{user.firstname}}</h4> 
+
+<div class="" style="font-size:18px;color: #28a7f5 ;"> Last name :</div><h4>{{user.lastname}}</h4>
+<div style="font-size:18px;color: #28a7f5 ;"> E-mail :</div><h4>{{user.email}}</h4>
+<div style="font-size:18px;color: #28a7f5 ;"> Password :</div><h4>{{user.password}}</h4>
+<div style="font-size:18px;color: #28a7f5 ;"> Phone number :</div><h4>{{user.phonenumber}}</h4> 
+<div style="font-size:18px;color: #28a7f5 ;"> Role :</div><h4>{{user.role}}</h4>
+
+<div style="font-size:18px;color: #28a7f5 ;">
+Online status :</div>
+
+
+<!-- <div>
+<div> {{user.firstname}}</div>
+<div> {{user.lastname}}</div>
+<div> {{user.email}}</div>
+ <div>{{user.password}}</div>
+<div> {{user.phonenumber}}</div>
+<div> {{user.role}}</div>
+</div>
+ -->
+<div ng-if="user.online"> <span style="color:#54ff26; class="glyphicon glyphicon-asterisk"></span></div>
+<div ng-if="!user.online"> <span style=" font-size:20px;color: #f0321f;" class="glyphicon glyphicon-asterisk"></span></div>
+<center>
+<a href="#/pendingRequests">BACK</a>
+</center>
+
+</div>
+
+</div>
+<!-- <a href="" class="btn btn-default">ACCEPT</a><br>
+<a href="" class="btn btn-default">DENY</a> -->
+
+</body>
+</html>
